@@ -14,7 +14,9 @@
 
 
 /* All links on hover color red*/
-
+a:hover {
+   color: red;
+}
 
 /* All Links visited color black*/
 
@@ -23,10 +25,20 @@
 
 
 /* Remove bullet points from header navigation links */
-
+header ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+/* Leidy alternative, which matches a ul descended from nav which is not descended from footer */
+/* nav ul:not(:is(footer ul)) { */
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+[href="#comments"] {
+   text-decoration: none;
+   color: orange;
+   font-style: italic;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
 
@@ -38,7 +50,10 @@
 
 
 /* The First Letter of each Article be 2em */
-
+/* article::first-letter { */
+section p:first-of-type::first-letter {
+   font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
 
